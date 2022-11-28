@@ -1,0 +1,196 @@
+*{
+    color: white;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin : 0;
+    background-image: url(../images/background-header.jpg);
+    background-size: cover;
+    background-color: rgba(0,0,0,.4);
+    background-blend-mode: multiply;
+}
+h1{
+    margin : 0
+}
+
+ul {
+    margin: 0;
+    padding : 0
+}
+
+.navbar{
+    justify-content: center;
+    border-bottom: 0.5px white solid;
+    padding: 0;
+}
+.heading{
+    color: white;
+    text-align: center;
+    font-family: Lucida Sans;
+    font-size: 2.5rem;
+}
+.main-heading{
+    margin-top: 20px;
+    font-weight: lighter;
+    font-size: 4rem;
+}
+nav li{
+    display: inline;
+
+}
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 15px;
+    
+}
+nav ul{
+    text-align: center;
+    
+}
+nav a:hover{
+    background-color: white;
+    color: black;
+}
+.about-section{
+    margin-top: 50px;
+}
+.about-me{
+    
+    font-size: 1.15rem;
+    background-color: #f1f1f1;
+    /* height : 400px; */
+    padding: 20px;
+    
+}
+
+.intro-paragraph-me{
+    color:black;
+}
+.main-about{
+    display: flex;
+}
+
+
+#Work{
+    margin-top: 10%;
+}
+
+.job{
+    text-align: center;
+    border: 2px solid white;
+    height: 280px;
+    width :400px;
+    border-radius: 10px;
+    padding: 15px;
+    
+}
+.work-section{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    
+}
+.work-section ul{
+    list-style-type: none;
+}
+.heading-contact,
+.heading-work{
+    margin-bottom: 20px;
+}
+#Projects{
+    margin-top: 10%;
+}
+.btn{
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+.btn:hover{
+    background-color: orange;
+}
+.individual-project{
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 1.15rem;
+}
+.row-project{
+    margin: 0 auto;
+}
+
+.pic{
+    margin-top: 10px;
+}
+.btn{
+   margin: 5px 5px 0 0 ;
+}
+
+#Contact{
+    margin: 10% 0;
+}
+.btn-submit{
+    border: 1px green solid;
+    text-decoration: none;
+    background-color: darkgreen;
+    color: white;
+    font-size: 1.15rem;
+}
+
+.btn-reset:hover,
+.btn-submit:hover{
+    background-color: orange;
+    color:black;
+    border: 1px orange solid;
+
+}
+
+.btn-reset{
+    border: 1px green solid;
+    font-size: 1.15rem;
+    background-color:#f1f1f1;
+    color: green;
+    text-decoration: none;
+    
+}
+
+.form-group{
+    padding: 0 15%;
+    margin: 0 auto;
+}
+.form-label{
+    font-size: 1.15rem;
+}
+.message-input{
+    padding-bottom: 50px;
+    
+}
+.all-btn{
+    margin: 15px auto;
+}
+
+.footer-section{
+    border-top: 1px solid white;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    
+
+}
+
+footer h3{
+    color: black;
+    display: inline;
+    font-size: 1.15rem;
+}
+.copyright{
+    color: black;
+    font-size: 1rem;
+}

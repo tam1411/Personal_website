@@ -6,7 +6,7 @@
 
 body{
     margin : 0;
-    background-image: url(../images/background-header.jpg);
+    background-image: url(background-header.jpg);
     background-size: cover;
     background-color: rgba(0,0,0,.4);
     background-blend-mode: multiply;

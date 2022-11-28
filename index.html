@@ -5,58 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="stylesheet.css"/>
 </head>
 <header>
-    <nav>
+    <nav class = "navbar navbar-expand-md">
         <ul>
-            <li>About</li>
-            <li>Work</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li><a href="#About">ABOUT</a></li>
+            <li><a href="#Work">WORK</a></li>
+            <li><a href="#Projects">PROJECTS</a></li>
+            <li> <a href="#Contact">CONTACT</a></li>
         </ul>
-        <h1>Tam Nguyen</h1>
     </nav>
+    <h1 class = "heading main-heading">Tam Nguyen</h1>
 </header>
-<hr>
+
 <body>
     
-    <section>
-        <h2>About</h2>
-        <p>
-            Hello there, my name is Tam Nguyen. I am a senior student in Computer
-            Science at Portland State Univerisity. I hope to graduate at the end of this year.
-            Going to Computer Science is a challenge for me because I had no experience with any
-            techniques with computer before. However, as approaching to finishing my undergraduate,
-            I've had more interested in the major. It helps me to think more logically and
-            force me to be more precise. Overall, I hope that the decision I make today will 
-            reward me in the future. By the way, the picture you saw is me in my 
-            traditional dress called "Ao Dai". I usually wore it in the Lunar New Year. 
-            Hope you guys enjoy my personal website. Thank you.
-        </p>
-        <img src="MeInAoDai.jpg" 
-         alt="Me in my traddional dress"
-         width = "200"
-         height="200"
-        />
+    <section id = "About">
+        
+       <div class=" container about-section ">
+        <!-- <h2 class = "heading secondary-heading">ABOUT</h2> -->
+        <div class = "row">
+            <div class = "col-12 col-md-6"><img class ="img-fluid" src="MeInAoDai.jpg" 
+                alt="Me in my traddional dress"/>
+            </div>
+            <div class = "col-12 col-md-6 about-me">  
+              <p class = "intro-paragraph-me">
+                    Hello there, my name is Tam Nguyen. I am a senior student in Computer
+                    Science at Portland State Univerisity. I hope to graduate at the end of this year.
+                    Going to Computer Science is a challenge for me because I had no experience with any
+                    techniques with computer before.
+                    However, as approaching to finishing my undergraduate,
+                    I've had more interested in the major. It helps me to think more logically and
+                    force me to be more precise. Overall, I hope that the decision I make today will 
+                    reward me in the future. By the way, the picture you saw is me in my 
+                    traditional dress called "Ao Dai". I usually wore it in the Lunar New Year. 
+                    Hope you guys enjoy my personal website. Thank you.
+            </p>
+
+            </div>
+       
+    </div>
     </section>
 
-    <section>
-        <h2>Work</h2>
-        <div>
-            <div>
+    <section id = "Work">
+        <h2 class = "heading heading-work">WORK</h2>
+        <div class = "work-section">
+            <div class = "job">
                 <strong>Computer Lab Assistant</strong>
-                <span>2019-2020</span>
-                <ul>
+                <ul>2019-2020
                     <li>Help students with basic computer skills</li>
                     <li>Front desk </li>
                     <li>Support printing, photocopy services</li>
                 </ul>
             </div>
-            <div>
+            <div class = "job">
                 <strong>Book Store Retail Assistant</strong>
-                <span>2016</span>
-                <ul>
-                    <li>Assitant students in book selection</li>
+                
+                <ul>2016
+                    <li>Assisting students in book selection</li>
                     <li>Cashier position</li>
                     <li>Customer services</li>
                 </ul>
@@ -65,10 +76,15 @@
         </div>
     </section>
 
-    <section>
-        <h2>Projects</h2>
-        <div>
-            <Strong>Phone Call Track</Strong>
+    <section id = "Projects">
+        <h2 class = "heading secondary-heading">PROJECTS</h2>
+        <div class = "container section-projects">
+        <div class = "row row-project "> 
+        <div class=" col-md-5  individual-project">
+            <div>
+            <img class = "img-fluid pic" src="pr.png" alt="phone book from online resources">
+            </div>
+            <a class ="btn" href="https://github.com/tam1411/PortlandStateJavaSummer2022">Phone Call Track</a>
             <p>
                 Phone Call Track is designed to keep track all the phone calls 
                 that client makes and receives from other people. The program will
@@ -76,66 +92,79 @@
                 and time. Phone Call Track is later upgraded to Phone Bill App which
                 is included next.
             </p>
-            <img src="..\images\GitHub-logo.png" 
-            alt="GitHub"
-            width="30"
-            height="30"
-            />
+           
+           
         </div>
 
-        <div>
-            <Strong>Phone Bill App</Strong>
+        <div class=" col-md-5  individual-project">
+            <div>
+            <img class ="img-fluid pic" src="project.jpg" alt="bill picture from online resources">
+            </div>
+            <a class ="btn" href="https://github.com/tam1411/PortlandStateJavaSummer2022">Phone Bill App</a>
             <p>
                 Phone Bill App is the final phase from Phone Call Track. Phone Bill App is 
                 lauched by Android OS. In Phone Bill App, customer can have all the features
                 from Phone Call Track, search from range of date, add, and remove phone bills 
-                from multiples customers. 
-                
-            </p>
-            <img src="..\images\GitHub-logo.png" 
-            alt="GitHub"
-            width="30"
-            height="30"
-            />
+                from multiples customers.    
+            </p> 
+    
         </div>
+
+    </div>
+    </div>
     </section>
 
-    <section>
+    <section id = "Contact">
         <form action="">
-            <h2>Contact</h2>
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name">
+        <div class = "form-group">
+            <h2 class="heading heading-contact">CONTACT</h2>
+            <div class = "row row-cols-2">
+                <div class = "col">
+                    <label class = "form-label" for="name">Name</label>
+                    <input  type="text" class = "form-control" name="name" id="name" placeholder="Who are you?">
+                </div>
+
+                <div class = "col">
+                    <label class = "form-label" for="Email">Email</label>
+                    <input  type="text" class = "form-control" name="Email" id="Email" placeholder="hello@gmail.com">
+
+                </div>
+
             </div>
-            <br>
-            <div>
-                <label for="message">Message:</label>
-                <input type="text" name="message" id="message">
+            
+            <div class = "row">
+                <div class = "col">
+                    <label class="form-label" for="message">Message</label>
+                    <input type="text" class = "form-control message-input" name="message" id="message" placeholder="Tell me what you think">
+                </div>
+
             </div>
+            
+            <div class = "all-btn">
+                <button type="submit" class ="btn btn-submit">Submit</button>
+                <button type ="reset" class = "btn btn-reset">Reset</button>
+            </div>
+            
+        </div>
         </form>
         
     </section>
     <footer>
-        <h3>Tam Nguyen</h3>
-        <ul>
-            <li> <img src="Facebook-logo.png" alt="Facebook-logo"
-                  width = "40"
-                  heigth = "40"
-                  />
-            </li>
-            <li>
-                <img src="GitHub-logo.png" alt="GitHub-logo"
-                  width = "25"
-                  heigth = "25"
-                  />
-            </li>
-            <li>
-                <img src="Instagram-Logo.png" alt="Instagram-logo"
-                  width = "40"
-                  heigth = "40"
-                  />
-            </li>
-        </ul>
+        <div class="footer-section">
+        <span class = "copyright">&copy;</span>
+        <h3> 2022 Tam Nguyen</h3>
+        <span>
+        <a href="https://github.com/tam1411">
+        <img src="GitHub-logo.png" alt="GitHub-logo"
+            width = "25"
+            heigth = "25"
+        />
+
+
+        </a>
+        
+        </span>
+    </div>  
     </footer>
 </body>
 </html>
